@@ -67,7 +67,8 @@
             this.button10 = new System.Windows.Forms.Button();
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.groupBoxDataGridView = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupBoxParams.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBoxTest.SuspendLayout();
@@ -78,7 +79,8 @@
             this.tabPageClearAllReport.SuspendLayout();
             this.tabPageSetData.SuspendLayout();
             this.groupBoxDataGridView.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxParams
@@ -464,7 +466,7 @@
             // 
             // groupBoxDataGridView
             // 
-            this.groupBoxDataGridView.Controls.Add(this.dataGridView1);
+            this.groupBoxDataGridView.Controls.Add(this.gridControl1);
             this.groupBoxDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBoxDataGridView.Location = new System.Drawing.Point(0, 537);
             this.groupBoxDataGridView.Name = "groupBoxDataGridView";
@@ -473,17 +475,21 @@
             this.groupBoxDataGridView.TabStop = false;
             this.groupBoxDataGridView.Text = "Отчёт";
             // 
-            // dataGridView1
+            // gridControl1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 18);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1125, 233);
-            this.dataGridView1.TabIndex = 0;
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(3, 18);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(1125, 233);
+            this.gridControl1.TabIndex = 0;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
             // 
             // AdvertDataForm
             // 
@@ -508,7 +514,8 @@
             this.tabPageClearAllReport.ResumeLayout(false);
             this.tabPageSetData.ResumeLayout(false);
             this.groupBoxDataGridView.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -518,7 +525,6 @@
         private System.Windows.Forms.GroupBox groupBoxParams;
         private System.Windows.Forms.GroupBox groupBoxTest;
         private System.Windows.Forms.GroupBox groupBoxDataGridView;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPageAddStartTime;
         private System.Windows.Forms.TabPage tabPageRemoveStartTime;
@@ -555,5 +561,7 @@
         private System.Windows.Forms.TabPage tabPageSetData;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.PropertyGrid propertyGrid1;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }

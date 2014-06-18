@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Пакеты"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Пакеты"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="AdvertData"><param name="Local" value="namespace_advert_data.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Editor"><param name="Local" value="namespace_advert_data_1_1_editor.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Properties"><param name="Local" value="namespace_advert_data_1_1_editor_1_1_properties.html"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Forms"><param name="Local" value="namespace_advert_data_1_1_forms.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Классы"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Классы"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="AdvertData"><param name="Local" value="namespace_advert_data.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Editor"><param name="Local" value="namespace_advert_data_1_1_editor.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Forms"><param name="Local" value="namespace_advert_data_1_1_forms.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AdvertDataForm"><param name="Local" value="class_advert_data_1_1_forms_1_1_advert_data_form.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="AdvertDataForm"><param name="Local" value="class_advert_data_1_1_forms_1_1_advert_data_form.html#ade74bad239228075b06f23f00652bb55"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_advert_data_1_1_forms_1_1_advert_data_form.html#a657f930ffab20a51d5f5949e7e1c0922"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Database"><param name="Local" value="class_advert_data_1_1_forms_1_1_advert_data_form.html#a34afa2ed8935eb48dfb94e420b08d157"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="DataSource"><param name="Local" value="class_advert_data_1_1_forms_1_1_advert_data_form.html#a6971c5091209f56a330882dc7fbdc374"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Report"><param name="Local" value="class_advert_data_1_1_forms_1_1_advert_data_form.html#a0a8f6aa3373c003f390580a4b91dfe64"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Test"><param name="Local" value="class_advert_data_1_1_forms_1_1_advert_data_form.html#a23bb3264e401c3aeee9d26a239dcec80"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Database"><param name="Local" value="class_advert_data_1_1_database.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Database"><param name="Local" value="class_advert_data_1_1_database.html#a3589a0c09d2857baa296334df42e8f35"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddStartTime"><param name="Local" value="class_advert_data_1_1_database.html#a5e68ba2819a0aa1da8a266fb194c3f31"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ClearAllReport"><param name="Local" value="class_advert_data_1_1_database.html#a91140db43510a4eb52de88bf5ef34dc9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Connect"><param name="Local" value="class_advert_data_1_1_database.html#a411697c67e1f4b3b8669850e33f61cdc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Disconnect"><param name="Local" value="class_advert_data_1_1_database.html#a17d29da3fd0335e2bbb53ba149e71c3b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Exists"><param name="Local" value="class_advert_data_1_1_database.html#a6d68c71acccd791dbabc11b69af15656"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetData"><param name="Local" value="class_advert_data_1_1_database.html#a31db3b29faa658c6b559c8a02d2d683d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetSetting"><param name="Local" value="class_advert_data_1_1_database.html#acd02f2b52c12782c264db0041e9f6ffb"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetStartDates"><param name="Local" value="class_advert_data_1_1_database.html#a7fd09fc8bf0c77fb716156ce482942cd"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="RemoveStartTime"><param name="Local" value="class_advert_data_1_1_database.html#a78c39f11605ed7527d1858e84e0b2334"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetData"><param name="Local" value="class_advert_data_1_1_database.html#a1035e18ac4389569bc236236f850d9c3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetSetting"><param name="Local" value="class_advert_data_1_1_database.html#a1f0ff57f6d508514c5aaf02dca134de3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Connection"><param name="Local" value="class_advert_data_1_1_database.html#a4698b82deab183b66e2bdecbe590b044"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="ConnectionString"><param name="Local" value="class_advert_data_1_1_database.html#a9b986d5689f5a6c3f7565eeecff6313f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Report"><param name="Local" value="class_advert_data_1_1_database.html#a792a2c162be5a913573b560fc0d9cb3f"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Semaphore"><param name="Local" value="class_advert_data_1_1_database.html#a4ff9641ffa4a8b7431228d126703928c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Record"><param name="Local" value="class_advert_data_1_1_record.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Ad"><param name="Local" value="class_advert_data_1_1_record.html#a9c0f5e6a909f0cb90df6af7e7af35300"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dll"><param name="Local" value="class_advert_data_1_1_record.html#a46d4d0860781a7f2ccd9af26025d12b3"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="EndTime"><param name="Local" value="class_advert_data_1_1_record.html#ac343c5c1188872cd97e8394bd55e5631"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Id"><param name="Local" value="class_advert_data_1_1_record.html#a07f38726ac87b12bc78813719ab011cc"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Key"><param name="Local" value="class_advert_data_1_1_record.html#a8ee61e05687eb3f0f57adbd8c8c0f55d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Long"><param name="Local" value="class_advert_data_1_1_record.html#a43cfdb4200976b189f903bda0f0fd7e0"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Resource"><param name="Local" value="class_advert_data_1_1_record.html#a4b980e3063827cac3498a6c38feb7720"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Result"><param name="Local" value="class_advert_data_1_1_record.html#a76cc6b5916a7ccbbf5d784fbb7ef1b0d"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="StartTime"><param name="Local" value="class_advert_data_1_1_record.html#aae8675dc3bd9625fda7af9e03e1b95ee"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Url"><param name="Local" value="class_advert_data_1_1_record.html#a656bf22e79ae5d9e8233ec11e6ea90e4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="User"><param name="Local" value="class_advert_data_1_1_record.html#a40a5c9475b9ec1a1e821720ba68728ef"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Settings"><param name="Local" value="class_advert_data_1_1_settings.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Name"><param name="Local" value="class_advert_data_1_1_settings.html#ad0ccc3e75e903a4729f756b57f423890"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Value"><param name="Local" value="class_advert_data_1_1_settings.html#aee6785e9f9bc8a7a75494e85ef379d91"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Алфавитный указатель классов"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Иерархия классов"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="AdvertData.Database"><param name="Local" value="class_advert_data_1_1_database.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Form"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AdvertData.Forms.AdvertDataForm"><param name="Local" value="class_advert_data_1_1_forms_1_1_advert_data_form.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="AdvertData.Record"><param name="Local" value="class_advert_data_1_1_record.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="AdvertData.Settings"><param name="Local" value="class_advert_data_1_1_settings.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Члены классов"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Указатель"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Функции"><param name="Local" value="functions_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Свойства"><param name="Local" value="functions_prop.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+</UL>
+</BODY>
+</HTML>

@@ -83,8 +83,8 @@ namespace AdvertData.Forms
 
         private object DataSource
         {
-            get { return dataGridView1.DataSource; }
-            set { dataGridView1.DataSource = value; }
+            get { return gridControl1.DataSource; }
+            set { gridControl1.DataSource = value; }
         }
 
         private void testToolStripMenuItem_Click(object sender, EventArgs e)

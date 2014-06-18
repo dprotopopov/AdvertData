@@ -1,0 +1,258 @@
+\hypertarget{class_advert_data_1_1_database}{\section{Класс Advert\+Data.\+Database}
+\label{class_advert_data_1_1_database}\index{Advert\+Data.\+Database@{Advert\+Data.\+Database}}
+}
+
+
+Класс для работы с базой данных  
+
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_advert_data_1_1_database_a411697c67e1f4b3b8669850e33f61cdc}{Connect} ()
+\begin{DoxyCompactList}\small\item\em Метод инициализации к базе данных \end{DoxyCompactList}\item 
+void \hyperlink{class_advert_data_1_1_database_a17d29da3fd0335e2bbb53ba149e71c3b}{Disconnect} ()
+\begin{DoxyCompactList}\small\item\em Метод отключения от базы данных \end{DoxyCompactList}\item 
+void \hyperlink{class_advert_data_1_1_database_a91140db43510a4eb52de88bf5ef34dc9}{Clear\+All\+Report} ()
+\begin{DoxyCompactList}\small\item\em Очищает всю БД отчета. \end{DoxyCompactList}\item 
+void \hyperlink{class_advert_data_1_1_database_a78c39f11605ed7527d1858e84e0b2334}{Remove\+Start\+Time} (string date\+Time1=null, string date\+Time2=null)
+\begin{DoxyCompactList}\small\item\em Метод удаляет Start\+Time и все связи от этого Start\+Time к остальным полям с каскадным удалением этих полей. Т.\+е. удаление этих полей, если на них больше никто не ссылается. Все исходные данные хранятся в одной таблице, поэтому список Start\+Time-\/ов является всего лишь выборой уникальных значений Start\+Time из этой таблицы \end{DoxyCompactList}\item 
+void \hyperlink{class_advert_data_1_1_database_a5e68ba2819a0aa1da8a266fb194c3f31}{Add\+Start\+Time} (string date\+Time)
+\begin{DoxyCompactList}\small\item\em Создает новую запись Start\+Time. Данный метод является заглушкой -\/ то есть не выполняет никаких действий. Все исходные данные хранятся в одной таблице, поэтому список Start\+Time-\/ов является всего лишь выборой уникальных значений Start\+Time из этой таблицы \end{DoxyCompactList}\item 
+bool \hyperlink{class_advert_data_1_1_database_a6d68c71acccd791dbabc11b69af15656}{Exists} (string date\+Time)
+\begin{DoxyCompactList}\small\item\em Проверка существования записей с указанной датой \end{DoxyCompactList}\item 
+string \hyperlink{class_advert_data_1_1_database_acd02f2b52c12782c264db0041e9f6ffb}{Get\+Setting} (string name)
+\begin{DoxyCompactList}\small\item\em Получение значения настроечного параметра \end{DoxyCompactList}\item 
+\hypertarget{class_advert_data_1_1_database_a7fd09fc8bf0c77fb716156ce482942cd}{I\+Enumerable$<$ string $>$ {\bfseries Get\+Start\+Dates} ()}\label{class_advert_data_1_1_database_a7fd09fc8bf0c77fb716156ce482942cd}
+
+\item 
+bool \hyperlink{class_advert_data_1_1_database_a1035e18ac4389569bc236236f850d9c3}{Set\+Data} (string start\+Time, string key, string dll, string resource, string url, string user, string result, string ad=null)
+\begin{DoxyCompactList}\small\item\em Метод находит запись со значением Start\+Time и к ней добавляет остальные данные. В поле Time прописывает текущее время записи. Возвращает False если Start\+Time не найдена. \end{DoxyCompactList}\item 
+I\+Enumerable$<$ \hyperlink{class_advert_data_1_1_record}{Record} $>$ \hyperlink{class_advert_data_1_1_database_a31db3b29faa658c6b559c8a02d2d683d}{Get\+Data} (string date\+Time1, string date\+Time2)
+\begin{DoxyCompactList}\small\item\em Получение списка записей, находящихся в указанном диапазоне дат (включительно) фильтр «показать отчет с … по…» если не задан, то таблица отображает все данные. Если задан одно значение «показать отчет с…», то таблица отображает данные с указанного периода до конца значений; Если задан одно значение «показать отчет по…», то таблица отображает данные с самого начала до указанного значения; Если заданны оба значения, то таблица отображает данные входящие в этот период; Данный фильтр ведется только по полю Start\+Time, т.\+е отображаются данные Start\+Time попавшие в фильтр и все привязанные к нему данные даже если Time привязанных записей выпадает за пределы фильтра. \end{DoxyCompactList}\item 
+void \hyperlink{class_advert_data_1_1_database_a1f0ff57f6d508514c5aaf02dca134de3}{Set\+Setting} (string name, string value)
+\begin{DoxyCompactList}\small\item\em Установка значения настроечного параметра \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Свойства}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_advert_data_1_1_database_a792a2c162be5a913573b560fc0d9cb3f}{Report}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em флаг «Вести отчет» устанавливает значение в True или False переменной Report отдельной таблицы проекта и на данный отчет или методы никак не влияет. Данный фильтр нужен для других механизмов проекта, но управляется из этого интерфейса. D\+L\+L должна содержать методы управления флагом, а так же метод определения состояния флага. \end{DoxyCompactList}\item 
+object \hyperlink{class_advert_data_1_1_database_a4ff9641ffa4a8b7431228d126703928c}{Semaphore}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Семафор для блокирования одновременного доступа к классу из параллельных процессов Использование lock(database.\+Semaphore) \{ ... \} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс для работы с базой данных 
+
+
+
+\subsection{Методы}
+\hypertarget{class_advert_data_1_1_database_a5e68ba2819a0aa1da8a266fb194c3f31}{\index{Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}!Add\+Start\+Time@{Add\+Start\+Time}}
+\index{Add\+Start\+Time@{Add\+Start\+Time}!Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}}
+\subsubsection[{Add\+Start\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void Advert\+Data.\+Database.\+Add\+Start\+Time (
+\begin{DoxyParamCaption}
+\item[{string}]{date\+Time}
+\end{DoxyParamCaption}
+)}}\label{class_advert_data_1_1_database_a5e68ba2819a0aa1da8a266fb194c3f31}
+
+
+Создает новую запись Start\+Time. Данный метод является заглушкой -\/ то есть не выполняет никаких действий. Все исходные данные хранятся в одной таблице, поэтому список Start\+Time-\/ов является всего лишь выборой уникальных значений Start\+Time из этой таблицы 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em date\+Time} & Дата и время с учетом миллисекунд\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_advert_data_1_1_database_a91140db43510a4eb52de88bf5ef34dc9}{\index{Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}!Clear\+All\+Report@{Clear\+All\+Report}}
+\index{Clear\+All\+Report@{Clear\+All\+Report}!Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}}
+\subsubsection[{Clear\+All\+Report}]{\setlength{\rightskip}{0pt plus 5cm}void Advert\+Data.\+Database.\+Clear\+All\+Report (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_advert_data_1_1_database_a91140db43510a4eb52de88bf5ef34dc9}
+
+
+Очищает всю БД отчета. 
+
+\hypertarget{class_advert_data_1_1_database_a411697c67e1f4b3b8669850e33f61cdc}{\index{Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}!Connect@{Connect}}
+\index{Connect@{Connect}!Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}void Advert\+Data.\+Database.\+Connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_advert_data_1_1_database_a411697c67e1f4b3b8669850e33f61cdc}
+
+
+Метод инициализации к базе данных 
+
+\hypertarget{class_advert_data_1_1_database_a17d29da3fd0335e2bbb53ba149e71c3b}{\index{Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}!Disconnect@{Disconnect}}
+\index{Disconnect@{Disconnect}!Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}}
+\subsubsection[{Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}void Advert\+Data.\+Database.\+Disconnect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_advert_data_1_1_database_a17d29da3fd0335e2bbb53ba149e71c3b}
+
+
+Метод отключения от базы данных 
+
+\hypertarget{class_advert_data_1_1_database_a6d68c71acccd791dbabc11b69af15656}{\index{Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}!Exists@{Exists}}
+\index{Exists@{Exists}!Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}}
+\subsubsection[{Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool Advert\+Data.\+Database.\+Exists (
+\begin{DoxyParamCaption}
+\item[{string}]{date\+Time}
+\end{DoxyParamCaption}
+)}}\label{class_advert_data_1_1_database_a6d68c71acccd791dbabc11b69af15656}
+
+
+Проверка существования записей с указанной датой 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em date\+Time} & Дата и время с учетом миллисекунд\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Признак существования записей с указанной датой
+\end{DoxyReturn}
+\hypertarget{class_advert_data_1_1_database_a31db3b29faa658c6b559c8a02d2d683d}{\index{Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}!Get\+Data@{Get\+Data}}
+\index{Get\+Data@{Get\+Data}!Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}}
+\subsubsection[{Get\+Data}]{\setlength{\rightskip}{0pt plus 5cm}I\+Enumerable$<${\bf Record}$>$ Advert\+Data.\+Database.\+Get\+Data (
+\begin{DoxyParamCaption}
+\item[{string}]{date\+Time1, }
+\item[{string}]{date\+Time2}
+\end{DoxyParamCaption}
+)}}\label{class_advert_data_1_1_database_a31db3b29faa658c6b559c8a02d2d683d}
+
+
+Получение списка записей, находящихся в указанном диапазоне дат (включительно) фильтр «показать отчет с … по…» если не задан, то таблица отображает все данные. Если задан одно значение «показать отчет с…», то таблица отображает данные с указанного периода до конца значений; Если задан одно значение «показать отчет по…», то таблица отображает данные с самого начала до указанного значения; Если заданны оба значения, то таблица отображает данные входящие в этот период; Данный фильтр ведется только по полю Start\+Time, т.\+е отображаются данные Start\+Time попавшие в фильтр и все привязанные к нему данные даже если Time привязанных записей выпадает за пределы фильтра. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em date\+Time1} & Минимальная дата и время с учетом миллисекунд. Допустимо значение null.\\
+\hline
+{\em date\+Time2} & Максимальная дата и время с учетом миллисекунд. Допустимо значение null.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список записей
+\end{DoxyReturn}
+\hypertarget{class_advert_data_1_1_database_acd02f2b52c12782c264db0041e9f6ffb}{\index{Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}!Get\+Setting@{Get\+Setting}}
+\index{Get\+Setting@{Get\+Setting}!Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}}
+\subsubsection[{Get\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}string Advert\+Data.\+Database.\+Get\+Setting (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_advert_data_1_1_database_acd02f2b52c12782c264db0041e9f6ffb}
+
+
+Получение значения настроечного параметра 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя настроечного параметра\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Значение настроечного параметра
+\end{DoxyReturn}
+\hypertarget{class_advert_data_1_1_database_a78c39f11605ed7527d1858e84e0b2334}{\index{Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}!Remove\+Start\+Time@{Remove\+Start\+Time}}
+\index{Remove\+Start\+Time@{Remove\+Start\+Time}!Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}}
+\subsubsection[{Remove\+Start\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void Advert\+Data.\+Database.\+Remove\+Start\+Time (
+\begin{DoxyParamCaption}
+\item[{string}]{date\+Time1 = {\ttfamily null}, }
+\item[{string}]{date\+Time2 = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_advert_data_1_1_database_a78c39f11605ed7527d1858e84e0b2334}
+
+
+Метод удаляет Start\+Time и все связи от этого Start\+Time к остальным полям с каскадным удалением этих полей. Т.\+е. удаление этих полей, если на них больше никто не ссылается. Все исходные данные хранятся в одной таблице, поэтому список Start\+Time-\/ов является всего лишь выборой уникальных значений Start\+Time из этой таблицы 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em date\+Time1} & Минимальная дата и время с учетом миллисекунд. Допустимо значение null.\\
+\hline
+{\em date\+Time2} & Максимальная дата и время с учетом миллисекунд. Допустимо значение null.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_advert_data_1_1_database_a1035e18ac4389569bc236236f850d9c3}{\index{Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}!Set\+Data@{Set\+Data}}
+\index{Set\+Data@{Set\+Data}!Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}}
+\subsubsection[{Set\+Data}]{\setlength{\rightskip}{0pt plus 5cm}bool Advert\+Data.\+Database.\+Set\+Data (
+\begin{DoxyParamCaption}
+\item[{string}]{start\+Time, }
+\item[{string}]{key, }
+\item[{string}]{dll, }
+\item[{string}]{resource, }
+\item[{string}]{url, }
+\item[{string}]{user, }
+\item[{string}]{result, }
+\item[{string}]{ad = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{class_advert_data_1_1_database_a1035e18ac4389569bc236236f850d9c3}
+
+
+Метод находит запись со значением Start\+Time и к ней добавляет остальные данные. В поле Time прописывает текущее время записи. Возвращает False если Start\+Time не найдена. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em start\+Time} & Время начала выполнения\\
+\hline
+{\em key} & \\
+\hline
+{\em dll} & \\
+\hline
+{\em resource} & \\
+\hline
+{\em url} & \\
+\hline
+{\em user} & \\
+\hline
+{\em result} & \\
+\hline
+{\em ad} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Признак существования записей с указанной датой
+\end{DoxyReturn}
+\hypertarget{class_advert_data_1_1_database_a1f0ff57f6d508514c5aaf02dca134de3}{\index{Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}!Set\+Setting@{Set\+Setting}}
+\index{Set\+Setting@{Set\+Setting}!Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}}
+\subsubsection[{Set\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}void Advert\+Data.\+Database.\+Set\+Setting (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{string}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_advert_data_1_1_database_a1f0ff57f6d508514c5aaf02dca134de3}
+
+
+Установка значения настроечного параметра 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя настроечного параметра\\
+\hline
+{\em value} & Значение настроечного параметра\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Полный список свойств}
+\hypertarget{class_advert_data_1_1_database_a792a2c162be5a913573b560fc0d9cb3f}{\index{Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}!Report@{Report}}
+\index{Report@{Report}!Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}}
+\subsubsection[{Report}]{\setlength{\rightskip}{0pt plus 5cm}bool Advert\+Data.\+Database.\+Report\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_advert_data_1_1_database_a792a2c162be5a913573b560fc0d9cb3f}
+
+
+флаг «Вести отчет» устанавливает значение в True или False переменной Report отдельной таблицы проекта и на данный отчет или методы никак не влияет. Данный фильтр нужен для других механизмов проекта, но управляется из этого интерфейса. D\+L\+L должна содержать методы управления флагом, а так же метод определения состояния флага. 
+
+\hypertarget{class_advert_data_1_1_database_a4ff9641ffa4a8b7431228d126703928c}{\index{Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}!Semaphore@{Semaphore}}
+\index{Semaphore@{Semaphore}!Advert\+Data\+::\+Database@{Advert\+Data\+::\+Database}}
+\subsubsection[{Semaphore}]{\setlength{\rightskip}{0pt plus 5cm}object Advert\+Data.\+Database.\+Semaphore\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_advert_data_1_1_database_a4ff9641ffa4a8b7431228d126703928c}
+
+
+Семафор для блокирования одновременного доступа к классу из параллельных процессов Использование lock(database.\+Semaphore) \{ ... \} 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Advert\+Data/Database.\+cs\end{DoxyCompactItemize}

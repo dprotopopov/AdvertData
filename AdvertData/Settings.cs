@@ -18,7 +18,7 @@ namespace AdvertData
         public string Name { get; set; }
 
         /// <summary>
-        ///     Время начала выполнения
+        ///     Значение записи
         /// </summary>
         [DbType(NpgsqlDbType.Varchar)]
         [Description("Значение записи")]
